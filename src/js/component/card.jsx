@@ -2,11 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Card = (props) => {
-	const styleCard = {
-		width: "18rem",
-	};
 	return (
-		<div className="card" style={styleCard}>
+		<div className="card">
 			<img
 				className="card-img-top"
 				src={props.image}

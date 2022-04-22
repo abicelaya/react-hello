@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./navbar.jsx";
 import Jumbotron from "./jumbotron.jsx";
 import Card from "./card.jsx";
+import Footer from "./footer.jsx";
 
 //include images into your bundle
 import perro1 from "../../img/perro1.jpg";
@@ -16,15 +17,18 @@ const Home = () => {
 			<Navbar />
 			<div className="container-fluid">
 				<div className="row justify-content-md-center">
-					<div>
+					<div className="col-12">
 						<Jumbotron
 							title="Welcome to react"
-							description="React is the most popular rendering library in the world"
+							description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure beatae quam iste explicabo ea sed similique, veniam consequuntur voluptate eos quia at, nesciunt harum cumque numquam temporibus voluptatibus. Quam, et.
+							"
 							buttonLabel="Go to the official website"
 							buttonURL="https://reactjs.org/"
 						/>
 					</div>
-					<div className="col-2">
+				</div>
+				<div className="row justify-content-md-center">
+					<div className="col-3">
 						<Card
 							image={perro1}
 							title="Card title"
@@ -33,7 +37,7 @@ const Home = () => {
 							buttonURL="https://reactjs.org/"
 						/>
 					</div>
-					<div className="col-2">
+					<div className="col-3">
 						<Card
 							image={perro2}
 							title="Card title"
@@ -42,7 +46,7 @@ const Home = () => {
 							buttonURL="https://reactjs.org/"
 						/>
 					</div>
-					<div className="col-2">
+					<div className="col-3">
 						<Card
 							image={perro3}
 							title="Card title"
@@ -51,7 +55,7 @@ const Home = () => {
 							buttonURL="https://reactjs.org/"
 						/>
 					</div>
-					<div className="col-2">
+					<div className="col-3">
 						<Card
 							image={perro4}
 							title="Card title"
@@ -62,6 +66,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</>
 	);
 };
